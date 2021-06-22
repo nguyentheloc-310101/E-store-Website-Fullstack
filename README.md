@@ -8,7 +8,7 @@ I am very keen on Writing code, especially working with constructing web, AI pro
 
 And this is one of the simple webs for selling online like Amazona. 
 
-I used #REACTJS and #NODEJS to build the whole system of backend and frontend of this web 
+I used #REACTJS and #NODEJS to build the whole system of backend and frontend for this web 
 
 I hope you  all enjoy and have fun with coding
 
