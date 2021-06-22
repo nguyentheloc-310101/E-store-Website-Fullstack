@@ -10,4 +10,8 @@ And this is one of the simple web for selling on like
 
 I hope you  all enjoy and have fun with coding
 
-Every question about this project, just ask me through email: loc.nguyenn.310101@hcmut.edu.vn 
+Every question about this project, just ask me BY email to: loc.nguyenn.310101@hcmut.edu.vn 
+
+❤❤🌹 i also give a file RUN- MY PROJECT, to guild you how to run that project
+
+Thank you
