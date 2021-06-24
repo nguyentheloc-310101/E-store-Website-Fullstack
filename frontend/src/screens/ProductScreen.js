@@ -115,7 +115,6 @@ export default function ProductScreen(props) {
           </div>
         </div>
       )}
-      ;
     </div>
   );
 }
