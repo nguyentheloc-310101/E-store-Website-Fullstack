@@ -3,15 +3,15 @@ import { useDispatch, useSelector } from 'react-redux';
 import { savePaymentMethod } from '../actions/cartActions';
 import CheckoutSteps from '../components/CheckoutSteps';
 
-export default function PaymentScreen(props) {
-  const cart = useSelector(state => state.cart);
+export default function PaymentMethodScreen(props) {
+  const cart = useSelector((state) => state.cart);
   const { shippingAddress } = cart;
   if (!shippingAddress.address) {
     props.history.push('/shipping');
   }
   const [paymentMethod, setPaymentMethod] = useState('PayPal');
   const dispatch = useDispatch();
-  const submitHandler = e => {
+  const submitHandler = (e) => {
     e.preventDefault();
     dispatch(savePaymentMethod(paymentMethod));
     props.history.push('/placeorder');
@@ -32,7 +32,7 @@ export default function PaymentScreen(props) {
               name="paymentMethod"
               required
               checked
-              onChange={e => setPaymentMethod(e.target.value)}
+              onChange={(e) => setPaymentMethod(e.target.value)}
             ></input>
             <label htmlFor="paypal">PayPal</label>
           </div>
@@ -45,12 +45,13 @@ export default function PaymentScreen(props) {
               value="Stripe"
               name="paymentMethod"
               required
-              onChange={e => setPaymentMethod(e.target.value)}
+              onChange={(e) => setPaymentMethod(e.target.value)}
             ></input>
             <label htmlFor="stripe">Stripe</label>
           </div>
         </div>
         <div>
+          <label />
           <button className="primary" type="submit">
             Continue
           </button>

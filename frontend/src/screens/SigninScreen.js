@@ -12,11 +12,12 @@ export default function SigninScreen(props) {
   const redirect = props.location.search
     ? props.location.search.split('=')[1]
     : '/';
-  const userSignin = useSelector(state => state.userSignin);
+
+  const userSignin = useSelector((state) => state.userSignin);
   const { userInfo, loading, error } = userSignin;
 
   const dispatch = useDispatch();
-  const submitHandler = e => {
+  const submitHandler = (e) => {
     e.preventDefault();
     dispatch(signin(email, password));
   };
@@ -40,7 +41,7 @@ export default function SigninScreen(props) {
             id="email"
             placeholder="Enter email"
             required
-            onChange={e => setEmail(e.target.value)}
+            onChange={(e) => setEmail(e.target.value)}
           ></input>
         </div>
         <div>
@@ -50,7 +51,7 @@ export default function SigninScreen(props) {
             id="password"
             placeholder="Enter password"
             required
-            onChange={e => setPassword(e.target.value)}
+            onChange={(e) => setPassword(e.target.value)}
           ></input>
         </div>
         <div>

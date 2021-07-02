@@ -1,6 +1,0 @@
-Front-end : React
-Back-end: MongoBg 
-taking UI_interface: mongoDB_compass
-Platform for API : POSTMAN - test API work
-
-window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
